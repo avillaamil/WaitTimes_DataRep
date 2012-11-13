@@ -4,6 +4,7 @@ ArrayList<State> states = new ArrayList();
 
 RShape flag;
 PImage bg;
+//PFont font = loadFont("LaGiocondaOSTT-20.vlw");
 
 int activeState = 9999;
 boolean clicked;
@@ -13,6 +14,8 @@ gif_controller gif_man;
 
 void setup() {
   size(1200, 800);
+  
+  //textFont(font);
   RG.init(this);
   //RG.setPolygonizer(RG.ADAPTATIVE);
   bg = loadImage("Background.png");

@@ -1,6 +1,7 @@
 class State {
 
   String name;
+  String fullName;
   ArrayList<String> tweets = new ArrayList();
   float wait;
   int sampleSize;
@@ -52,6 +53,8 @@ class State {
       RPoint p = new RPoint(mouseX-pos.x, mouseY-pos.y);
       if (statePic.contains(p)) {
         c = "#6F6F8C";
+        //fill(#000000);
+        //text(name, mouseX, mouseY);
         isInside = true;
       } 
       else {
@@ -65,6 +68,10 @@ class State {
       noStroke();
       statePic.children[0].draw();
       popMatrix();
+      if (isInside) {
+        fill(#000000);
+        text(fullName, 131 + 337/2 - textWidth(fullName)/2, 253 - 20);
+      }
     } 
     else {
       pushMatrix();
@@ -90,6 +97,7 @@ class State {
     sampleSize = int(input[2]);
     x = int(input[3]);
     y = int(input[4]);
+    fullName = input[5];
   }
 
   void loadTweets() {
