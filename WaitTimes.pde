@@ -26,7 +26,7 @@ void setup() {
   gif_man=new gif_controller(this, 0.5);//this number is the playback speed for gif
   gif_man.reset_location();
   gif_man.set_speed(0);
-  gif_man.set_overall_time(7200);
+  gif_man.set_overall_time(14400);
 }
 
 
@@ -78,7 +78,7 @@ void mouseClicked() {
       states.get(i).hidden = false;
       states.get(i).highlight = true;
       gif_man.reset_location();
-      gif_man.set_speed(map(states.get(i).wait, 0, 3.08, 10, .01)); //1 = 2 minutes;
+      gif_man.set_speed(map(states.get(i).wait, 0, 4, 10, .005)); //1 = 2 minutes;
     } 
     if (!clicked) {
       states.get(i).highlight = false;

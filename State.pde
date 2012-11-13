@@ -68,7 +68,7 @@ class State {
       noStroke();
       statePic.children[0].draw();
       popMatrix();
-      if (isInside) {
+      if (isInside || highlight) {
         fill(#000000);
         text(fullName, 131 + 337/2 - textWidth(fullName)/2, 253 - 20);
       }
