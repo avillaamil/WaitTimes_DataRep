@@ -36,11 +36,11 @@ class gif_controller {
   }
 
   void move() {
-    if (finished==false) phase+=speed;
+    if (finished==false) phase+=1; //speed;
+    println(full_time_in_seconds);
     calc_phase();
-
-    int time_left=(int)(full_time_in_seconds*(1-phase/((550+79)*3+((900+79)*4-79))));
-    println(1-phase/((550+79)*3+((900+79)*4-79)));
+    int trackLength = int(((550+79)*3+((900+79)*4-79)));
+    int time_left=int(full_time_in_seconds - trackLength/frameRate); //(int)(full_time_in_seconds*(1-phase/((550+79)*3+((900+79)*4-79))));
     if (time_left<0) time_left=0;
     int seconds=time_left%60;
     time_left=time_left/60;

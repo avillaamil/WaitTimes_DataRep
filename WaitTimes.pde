@@ -78,7 +78,8 @@ void mouseClicked() {
       states.get(i).hidden = false;
       states.get(i).highlight = true;
       gif_man.reset_location();
-      gif_man.set_speed(map(states.get(i).wait, 0, 4, 9, .005)); //1 = 2 minutes;
+      gif_man.set_overall_time(int(states.get(i).wait*60*60));
+      gif_man.set_speed(1); //map(states.get(i).wait, 0, 4, 9, .005)); //1 = 2 minutes;
     } 
     if (!clicked) {
       states.get(i).highlight = false;
