@@ -40,6 +40,7 @@ class gif_controller {
     calc_phase();
 
     int time_left=(int)(full_time_in_seconds*(1-phase/((550+79)*3+((900+79)*4-79))));
+    println(1-phase/((550+79)*3+((900+79)*4-79)));
     if (time_left<0) time_left=0;
     int seconds=time_left%60;
     time_left=time_left/60;

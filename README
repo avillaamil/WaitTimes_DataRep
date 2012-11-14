@@ -5,3 +5,6 @@ http://www.ricardmarxer.com/geomerative/geomerative.zip
 
 The gifAnimation Processing Library canbe found here:
 http://www.extrapixel.ch/processing/gifAnimation/gifAnimation_processing_library_v2_3.zip
+
+Needs Fixing:
+Timer isn't accurate. Need moving George to move at correct speed.
