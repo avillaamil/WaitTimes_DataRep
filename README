@@ -3,8 +3,13 @@ The sketch requires two libraries.
 The Geomerative library can be found here: 
 http://www.ricardmarxer.com/geomerative/geomerative.zip
 
+<<<<<<< HEAD
 The gifAnimation Processing Library canbe found here:
 http://www.extrapixel.ch/processing/gifAnimation/gifAnimation_processing_library_v2_3.zip
 
 Needs Fixing:
 Timer isn't accurate. Need moving George to move at correct speed.
+=======
+The gifAnimation Processing Library can be found here:
+http://www.extrapixel.ch/processing/gifAnimation/gifAnimation_processing_library_v2_3.zip
+>>>>>>> 8bcd1ed6902aeaa35f7d45109e11c8051fce2b5d
